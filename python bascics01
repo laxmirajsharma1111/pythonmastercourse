@@ -1,0 +1,14 @@
+# Demonstrating basic data types and user input
+name = "laxmi raj sharma"
+age = 24
+price = 11.99
+
+print(f"Name: {name}, Age: {age}, Type: {type(age)}")
+
+# Basic Arithmetic and Logic
+a = int(input("Enter first number for sum: "))
+b = int(input("Enter second number for sum: "))
+print("Total Sum:", a + b)
+
+# Logical Operators
+print("Not False is:", not False)
