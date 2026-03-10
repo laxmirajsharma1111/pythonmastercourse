@@ -1,0 +1,22 @@
+class Account:
+    def __init__(self, bal, acc):
+        self.balance = bal
+        self.account_no = acc
+
+    def debit(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds!")
+        else:
+            self.balance -= amount
+            print(f"Rs. {amount} debited. Current Balance: {self.get_balance()}")
+
+    def credit(self, amount):
+        self.balance += amount
+        print(f"Rs. {amount} credited. Current Balance: {self.get_balance()}")
+
+    def get_balance(self):
+        return self.balance
+
+# Creating an instance of the class
+my_acc = Account(10000, 12345)
+my_acc.debit(1000)
